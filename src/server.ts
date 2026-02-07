@@ -1,16 +1,14 @@
 import fastify from 'fastify'
-import { SQL } from './database.js'
-import { randomUUID } from 'node:crypto'
 import { env } from './env/index.js'
+import { transactionsRoutes } from './routes/transactions.js'
+import fastifyCookie from '@fastify/cookie'
 
 const app = fastify()
 
-app.get('/hello', async () => {
-    const transaction = await SQL('transactions')
-    .where('title', 'Teste2')
-    .select('*')
+app.register(fastifyCookie)
 
-    return transaction
+app.register(transactionsRoutes, {
+    prefix: 'transactions'
 })
 
 app.listen({
