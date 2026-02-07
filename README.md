@@ -8,5 +8,5 @@
 # Regras de Negócio
 
 - [X] A transação poderá ser do tipo crédito que somará, e do tipo crédito que subtrairá;
-- [] Deve ser possível indentificarmos o usuário entre as transações;
-- [] O usuário só poderá visualizar transações a qual ele criou;
+- [X] Deve ser possível indentificarmos o usuário entre as transações;
+- [x] O usuário só poderá visualizar transações a qual ele criou;
