@@ -1,7 +1,7 @@
 # Regras de Funções
 
 - [X] O usuario deve poder criar uma nova transação;
-- [] O usuário deve poder ter um resumo da sua conta;
+- [X] O usuário deve poder ter um resumo da sua conta;
 - [X] O usuário deve poder listar todas as transações que já ocorreram;
 - [X] O usuário deve poder visualizar uma única transação;
 
